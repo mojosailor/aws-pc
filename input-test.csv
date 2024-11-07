@@ -1,4 +1,7 @@
-D1,1,1,1,1,1,1,1,1
-D2,1,1,1,1,1,1,1,1
-D3,2,2,2,2,2,2,2,2
-D4,2,2,2,2,2,2,2,2
+database,vCPU,mem,tds,fds,util,engine,version,deploy
+D1,2,8,1000,500,500,oracle,19c,single-az
+D2,2,8,1000,500,500,oracle,19c,single-az
+D3,8,16,2000,1500,500,oracle,19c,multi-az
+D4,8,18,2000,1500,500,oracle,19c,multi-az
+D5,16,96,10000,9500,500,oracle,19c,multi-az
+D6,16,96,10000,9500,500,oracle,19c,multi-az
