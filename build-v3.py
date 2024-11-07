@@ -1,4 +1,7 @@
-import pandas as pd
+
+#importing the required libraries
+import sys #for command line arguments
+import pandas as pd #for data manipulation
 
 # Function to read a subset of columns from a CSV file based on column headers
 def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
@@ -38,8 +41,12 @@ def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
     
     print(f'Output has been written to {output_file_path}')
 
+# Get the input file path from command-line arguments or use default
+default_csv_file_path = 'your_csv_file.csv'  # Replace with your default CSV file path
+csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_csv_file_path
+
 # Example usage
-csv_file_path = 'dbase-input.csv'  # Replace with your actual CSV file path
+default_csv_file_path = 'dbase-input.csv'  # Replace with your actual CSV file path
 columns_headers_string = 'Database ID,Svr vCPUs,Svr Memory,Target Engine,Deployment Type'  # Replace with actual column headers from your CSV
 output_file_path = 'output-test.txt'
 
