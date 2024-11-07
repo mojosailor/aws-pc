@@ -5,8 +5,13 @@ import pandas as pd #for data manipulation
 
 # Function to read a subset of columns from a CSV file based on column headers
 def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
+    # If columns_headers_string is not provided, read the first row of the input file to get column headers
+    if not columns_headers_string:
+        columns_headers_list = pd.read_csv(csv_file_path, nrows=0).columns.tolist()
+        columns_headers_string = ','.join(columns_headers_list)
+    else:
     # Convert the comma-delimited string of column headers to a list
-    columns_headers_list = [x.strip() for x in columns_headers_string.split(',')]
+        columns_headers_list = [x.strip() for x in columns_headers_string.split(',')]
     
     # Read the CSV file and use only the specified columns
     df = pd.read_csv(csv_file_path, usecols=columns_headers_list)
@@ -47,7 +52,8 @@ csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_cs
 
 # Example usage
 default_csv_file_path = 'dbase-input.csv'  # Replace with your actual CSV file path
-columns_headers_string = 'Database ID,Svr vCPUs,Svr Memory,Target Engine,Deployment Type'  # Replace with actual column headers from your CSV
+csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_csv_file_path
+columns_headers_string = sys.argv[2] if len(sys.argv) > 2 else ''  # Second argument for column headers string
 output_file_path = 'output-test.txt'
 
 process_csv_subset(csv_file_path, columns_headers_string, output_file_path)
