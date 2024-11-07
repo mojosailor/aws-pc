@@ -2,6 +2,7 @@
 #importing the required libraries
 import sys #for command line arguments
 import pandas as pd #for data manipulation
+import os #for file operations
 
 # Function to read a subset of columns from a CSV file based on column headers
 def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
