@@ -52,7 +52,7 @@ csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_cs
 
 # Example usage
 default_csv_file_path = 'dbase-input.csv'  # Replace with your actual CSV file path
-default_columns_headers_string = 'vCPU,Memory,Target Engine,License Model,Deployment Type'  # Replace with your actual column headers
+default_columns_headers_string = 'Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type'  # Replace with your actual column headers
 csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_csv_file_path
 columns_headers_string = sys.argv[2] if len(sys.argv) > 2 else default_columns_headers_string  # Second argument for column headers string
 output_file_path = 'output-test.txt'
