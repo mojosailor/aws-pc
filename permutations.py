@@ -12,8 +12,8 @@ def generate_permutations(input_list):
 
 
 # Read the input Excel file
-input_file = 'C:/Users/RLovell/"OneDrive - Smartronix, LLC"/clients/"Comm of MA"/EOANF/DOR/MPA/python/dbase-inputs.csv'  # Replace with your input file name
-output_file = 'C:/Users/RLovell/"OneDrive - Smartronix, LLC"/clients/"Comm of MA"/EOANF/DOR/MPA/python/dbase-output.csv'  # Replace with your desired output file name
+input_file = r'C:\Users/RLovell\"OneDrive - Smartronix, LLC"/\clients\"Comm of MA"\EOANF\DOR\MPA\python\dbase-inputs.csv'  # Replace with your input file name
+output_file = r'C:\Users/RLovell\"OneDrive - Smartronix, LLC"/\clients\"Comm of MA"\EOANF\DOR\MPA\python/dbase-output.csv'  # Replace with your desired output file name
 #sheet_name = 'Databases'  # Sheet name containing input data
 #output_sheet_name = 'Permutations'  # Sheet name for output
 
