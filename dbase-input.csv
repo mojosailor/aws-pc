@@ -165,5 +165,5 @@ D163,dor-webqadb3,dor-webqadb3,A71,"Multiple Apps (RRB, HCA, LMS, Internal Affai
 D164,dor-webprddb3,dor-webprddb3,A71,"Multiple Apps (RRB, HCA, LMS, Internal Affairs, Bulk File, EPRS, Dor Portal, PIP & PIPWS )",SQL Server,,, 952.50 ," 1,024.00 ",S462,4,96,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,, 0.04 ,
 D165,hd-odi-db-sbx,hd-odi-db-sbx,A75,Oracle Data Integrator,SQL Server,,," 1,125.89 "," 1,125.89 ",S468,2,32,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,, 0.02 ,
 D166,dor-oradevdb-r8,dor-oradevdb-r8,A76,"Oracle DB - Multiple Apps (RRB, LMS, Internal Affairs, Bulk File, EPRS, Dor Portal, PIP & PIPWS )",SQL Server,,," 2,139.19 "," 2,139.19 ",S469,8,32,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,, 0.03 ,
-,hd-rman-db12c,hd-rman-db12c,A77,RMAN,SQL Server,,, 321.16 ," 1,024.00 ",S471,2,16,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,, 0.03 ,
-,dor-udeploydb-n,dor-udeploydb-n,A87,UrbanCode,SQL Server,,," 3,152.49 "," 3,152.49 ",,#N/A,#N/A,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,,,
+D167,hd-rman-db12c,hd-rman-db12c,A77,RMAN,SQL Server,,, 321.16 ," 1,024.00 ",S471,2,16,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,, 0.03 ,
+D168,dor-udeploydb-n,dor-udeploydb-n,A87,UrbanCode,SQL Server,,," 3,152.49 "," 3,152.49 ",,#N/A,#N/A,SQL Server,Single-AZ,,,,Standard,,NonProduction,N,,,,,Replatform,,,,,,,

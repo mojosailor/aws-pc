@@ -29,7 +29,7 @@ def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
     
     # Group rows by all columns except the unique ID and count occurrences
     row_counts = data_without_unique_id.value_counts().reset_index(name='Count')
-    
+        
     # Add back the unique ID column by taking one representative from each group
     row_counts['Unique_ID'] = df.groupby(list(df.columns[1:]))[df.columns[0]].first().values
     
@@ -39,24 +39,34 @@ def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
     # Prepare output as a list of strings
     output = row_counts.apply(lambda row: ','.join(map(str, row.values)), axis=1).tolist()
     
-     # Write the output rows to a file
+    # Check if the output file exists; if not, write the headers at the top
+    #if not os.path.exists(output_file_path):
+    #    with open(output_file_path, 'w') as file:
+    #        
+    
+    # Append the current run's row counts to the output file
     with open(output_file_path, 'w') as file:
-        file.write(columns_headers_string + ',Count\n')  # Write headers as the first row
+        file.write(columns_headers_string + ',   Row Count\n')  # Write headers as the first row
         for line in output:
             file.write(line + '\n')
-    
-    print(f'Output has been written to {output_file_path}')
+        file.write("\nRun Summary:\n")  # Append "Run Summary" label after the existing content
 
+    
+    #print(f'Run summary has been appended to {output_file_path}')
+
+    
 # Get the input file path from command-line arguments or use default
 default_csv_file_path = 'your_csv_file.csv'  # Replace with your default CSV file path
 csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_csv_file_path
 
-# Example usage
-default_csv_file_path = 'dbase-input.csv'  # Replace with your actual CSV file path
-default_columns_headers_string = 'Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type'  # Replace with your actual column headers
-csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_csv_file_path
-columns_headers_string = sys.argv[2] if len(sys.argv) > 2 else default_columns_headers_string  # Second argument for column headers string
-output_file_path = 'output-test.txt'
+# Main script execution
+if __name__ == "__main__":
+    # Get the input file path and column headers string from command-line arguments or use defaults
+    default_csv_file_path = 'dbase-input.csv'  # Replace with your actual CSV file path
+    default_columns_headers_string = 'Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type'  # Replace with your actual column headers
+    csv_file_path = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else default_csv_file_path
+    columns_headers_string = sys.argv[2] if len(sys.argv) > 2 else default_columns_headers_string  # Second argument for column headers string
+    output_file_path = 'output-test.txt'
 
 process_csv_subset(csv_file_path, columns_headers_string, output_file_path)
 

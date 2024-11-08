@@ -1,4 +1,4 @@
-Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type,Count
+Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type,   Row Count
 4.0,32.0,Oracle,Single-AZ,Standard,23
 4.0,16.0,Oracle,Single-AZ,Standard,21
 2.0,96.0,Oracle,Single-AZ,Standard,16
@@ -40,3 +40,5 @@ Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type,Count
 4.0,96.0,SQL Server,Single-AZ,Standard,1
 2.0,98.0,Oracle,Multi-AZ,Enterprise,1
 nan,nan,SQL Server,Single-AZ,Standard,1
+
+Run Summary:
