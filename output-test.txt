@@ -1,44 +1,40 @@
-Svr vCPUs,Svr Memory,Target Engine,License Model,Deployment Type,   Row Count
-4.0,32.0,Oracle,Single-AZ,Standard,23
-4.0,16.0,Oracle,Single-AZ,Standard,21
-2.0,96.0,Oracle,Single-AZ,Standard,16
-8.0,24.0,Oracle,Single-AZ,Standard,12
-4.0,16.0,SQL Server,Single-AZ,Standard,11
-2.0,8.0,Oracle,Single-AZ,Standard,9
-4.0,16.0,Oracle,Multi-AZ,Enterprise,8
-2.0,6.0,Oracle,Single-AZ,Standard,8
-8.0,8.0,Oracle,Multi-AZ,Enterprise,5
-8.0,8.0,SQL Server,Single-AZ,Standard,5
-8.0,16.0,SQL Server,Multi-AZ,Enterprise,4
-8.0,32.0,Oracle,Multi-AZ,Enterprise,4
-2.0,4.0,Oracle,Multi-AZ,Enterprise,3
-8.0,32.0,SQL Server,Single-AZ,Standard,3
-8.0,128.0,Oracle,Single-AZ,Standard,2
-4.0,12.0,Oracle,Multi-AZ,Enterprise,2
-4.0,12.0,Oracle,Single-AZ,Standard,2
-8.0,48.0,SQL Server,Single-AZ,Standard,2
-8.0,48.0,Oracle,Single-AZ,Standard,2
-8.0,6.0,Oracle,Multi-AZ,Enterprise,2
-4.0,32.0,SQL Server,Multi-AZ,Enterprise,2
-4.0,46.0,Oracle,Single-AZ,Standard,2
-2.0,4.0,Oracle,Single-AZ,Standard,2
-2.0,12.0,SQL Server,Single-AZ,Standard,1
-16.0,128.0,Oracle,Multi-AZ,Enterprise,1
-8.0,13.0,Oracle,Single-AZ,Standard,1
-8.0,132.0,Oracle,Single-AZ,Standard,1
-4.0,40.0,Oracle,Single-AZ,Standard,1
-8.0,32.0,PostGres,Single-AZ,Standard,1
-10.0,2.0,Oracle,Single-AZ,Standard,1
-8.0,16.0,PostGres,Single-AZ,Standard,1
-4.0,20.0,SQL Server,Multi-AZ,Enterprise,1
-4.0,2.0,SQL Server,Single-AZ,Standard,1
-4.0,7.8,Oracle,Multi-AZ,Enterprise,1
-8.0,64.0,SQL Server,Single-AZ,Standard,1
-2.0,6.0,SQL Server,Multi-AZ,Enterprise,1
-16.0,96.0,Oracle,Multi-AZ,Enterprise,1
-3.0,96.0,SQL Server,Multi-AZ,Enterprise,1
-4.0,96.0,SQL Server,Single-AZ,Standard,1
-2.0,98.0,Oracle,Multi-AZ,Enterprise,1
-nan,nan,SQL Server,Single-AZ,Standard,1
-
-Run Summary:
+4,32,Oracle,Single-AZ,Standard,23
+4,16,Oracle,Single-AZ,Standard,21
+2,96,Oracle,Single-AZ,Standard,16
+8,24,Oracle,Single-AZ,Standard,12
+4,16,SQL Server,Single-AZ,Standard,12
+2,8,Oracle,Single-AZ,Standard,9
+4,16,Oracle,Multi-AZ,Enterprise,8
+2,6,Oracle,Single-AZ,Standard,8
+8,8,Oracle,Multi-AZ,Enterprise,5
+8,8,SQL Server,Single-AZ,Standard,5
+8,16,SQL Server,Multi-AZ,Enterprise,4
+8,32,Oracle,Multi-AZ,Enterprise,4
+2,4,Oracle,Multi-AZ,Enterprise,3
+8,32,SQL Server,Single-AZ,Standard,3
+8,12,Oracle,Multi-AZ,Enterprise,2
+4,128,Oracle,Single-AZ,Standard,2
+4,6,Oracle,Multi-AZ,Enterprise,2
+8,48,Oracle,Single-AZ,Standard,2
+8,48,SQL Server,Single-AZ,Standard,2
+8,32,SQL Server,Multi-AZ,Enterprise,2
+4,12,Oracle,Single-AZ,Standard,2
+4,4,Oracle,Single-AZ,Standard,2
+2,46,Oracle,Single-AZ,Standard,2
+2,128,Oracle,Multi-AZ,Enterprise,1
+16,132,Oracle,Single-AZ,Standard,1
+8,13,Oracle,Single-AZ,Standard,1
+8,12,SQL Server,Single-AZ,Standard,1
+4,32,PostGres,Single-AZ,Standard,1
+8,16,PostGres,Single-AZ,Standard,1
+10,2,Oracle,Single-AZ,Standard,1
+8,2,SQL Server,Single-AZ,Standard,1
+4,20,SQL Server,Multi-AZ,Enterprise,1
+4,40,Oracle,Single-AZ,Standard,1
+4,7.8,Oracle,Multi-AZ,Enterprise,1
+8,6,SQL Server,Multi-AZ,Enterprise,1
+2,64,SQL Server,Single-AZ,Standard,1
+16,96,Oracle,Multi-AZ,Enterprise,1
+3,96,SQL Server,Multi-AZ,Enterprise,1
+4,96,SQL Server,Single-AZ,Standard,1
+2,98,Oracle,Multi-AZ,Enterprise,1

@@ -15,7 +15,7 @@ def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
         columns_headers_list = [x.strip() for x in columns_headers_string.split(',')]
     
     # Read the CSV file and use only the specified columns
-    df = pd.read_csv(csv_file_path, usecols=columns_headers_list)
+    df = pd.read_csv(csv_file_path, usecols=columns_headers_list, dtype=str)
     
     # Normalize the data by trimming spaces and ensuring consistent formatting
     df = df.map(lambda x: str(x).strip())
@@ -39,20 +39,20 @@ def process_csv_subset(csv_file_path, columns_headers_string, output_file_path):
     # Prepare output as a list of strings
     output = row_counts.apply(lambda row: ','.join(map(str, row.values)), axis=1).tolist()
     
-    # Check if the output file exists; if not, write the headers at the top
-    #if not os.path.exists(output_file_path):
-    #    with open(output_file_path, 'w') as file:
-    #        
-    
-    # Append the current run's row counts to the output file
+    # Print summary rows to STDOUT
+    print("\n-----------Run Summary:--------------\n")
+    print(columns_headers_string)
+    for line in output:
+        print(line)
+        count_summary = row_counts['Count'].sum()
+    print(f'\nRow Count Total: {count_summary}')
+   
+    # Write the current run's rows to the output file
     with open(output_file_path, 'w') as file:
-        file.write(columns_headers_string + ',   Row Count\n')  # Write headers as the first row
         for line in output:
-            file.write(line + '\n')
-        file.write("\nRun Summary:\n")  # Append "Run Summary" label after the existing content
-
-    
-    #print(f'Run summary has been appended to {output_file_path}')
+            file.write(line + '\n')  # Write each row count as a new line
+     
+    print(f'\nRun summary has been written to {output_file_path}')
 
     
 # Get the input file path from command-line arguments or use default
